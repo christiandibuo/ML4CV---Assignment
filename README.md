@@ -6,7 +6,7 @@ The notebook has been created using Kaggle. All the model training and evaluatio
 To ensure reproducibility please upload the notebook on Kaggle, connect to GPU P100 and run the notebook. Please, ensure that on your Kaggle notebook internet connection is enabled. It should automatically pin the environment to the original ones, do not change this otherwise some packages may give some errors (Kaggle environment changes often).
 
 ## Dataset and Data
-Kaggle is fully cloud-based. Your local machine and the Kaggle server don’t share a file system, this implies that all the files need to be dinamically downloaded during the notebook execution, or manually added, this creates 2 consequences:
+Kaggle is fully cloud-based. Your local machine and the Kaggle server don’t share a file system, this implies that all the files need to be dinamically downloaded during the notebook execution, or manually added. To avoid this i proceded as follows:
 - The StreetHazards dataset has been directly downloaded from the Berkley university link in the first line of code, using wget.
 - The model weights, the results directory containing all the evaluation results and the logs directory containing the logs run have been updated on the institutional One Drive, as required. But, One Drive only allows to share the link with those belonging to your institutional group (Unibo, in this case), and this blocks the download directly from Kaggle. To solve this inconvinient i have uploaded them inside my personal Google Drive. Link to the files:
   - the institutional OneDrive: https://liveunibo-my.sharepoint.com/:f:/g/personal/christian_dibuo_studio_unibo_it/EvnP2sxQoNRJqYqPF8YAg-UB37yXA_FhtvWtGmyauVuO8w?e=gTPSuf
