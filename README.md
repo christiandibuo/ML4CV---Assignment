@@ -22,6 +22,6 @@ The notebook is divided in two main parts:
 The notebook take the results of the evaluation, the weights and the logs directly from the results directory provided in the Google Drive.
 It comes in a configuration where only the Qualitative results are runned in real time, all the other results are stored in the results directory. 
 You could alternatively decide to:
-- Run the Evaluation set the variable EVALUATION to True in the section global variables;
+- Run the Evaluation set the variable EVALUATION to True in the section global variables. If you decide to run the EVALUATION only for some configuration in the ablation you have to run, at least, the cell of the best segmenter and the best rpl, otherwise running any other cell of the ablation will arise a key error. This happens because in the ablation comparisons with the best model is showed and the structure inside the results directory and the one computed at run time does not match. This problems arises from Kaggle notebook whihc is thinked to be runned in sequence. Of course, if you run all the cells everything is fine;
 - Train the best segmenter model (may require a bit) set the variable TRAIN_MODEL to True in the section global variables;
 - Compute the mean and standard deviation set the variable COMPUTE_MEAN_STD to True in the section gloabal variables.
